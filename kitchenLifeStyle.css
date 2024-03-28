@@ -1,0 +1,237 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 10%;  
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+nav {
+    align-self: center;
+    height:100%;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+}
+
+.navbar li {
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.navbar li a { 
+    text-decoration: none;
+    font-size: xx-large;
+    color: rgb(255, 106, 51);
+}
+
+a.menu:hover, a.categories:hover,  a.recherche:hover,  a.geo:hover,  a.az:hover, a.courses:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.title {
+    display: grid;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color:  rgb(255, 106, 51);
+    font-size: 2rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+spanP {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.randomMeal {
+    background-color: white;
+    margin-top: 5%;
+    text-decoration: none;
+    color: rgb(255, 106, 51);
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid  rgb(255, 106, 51);
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+button.randomMeal:hover{
+    color: green;
+    border: 1px solid green;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: small;
+    margin-top: 20%;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 106, 51) ;
+}
+
+.logoPartner a {
+    display: flex;
+    justify-content: center;
+
+}
+.leclerc {
+    width: 20%;
+   
+}
+
+.spanLogo {
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+/*Style js*/
+
+/*menu*/
+#preview h1 {
+    color: green;
+    text-align: center; 
+}
+
+#preview img {
+    width: 300px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/*random*/
+
+#details h1 {
+    color: green;
+    text-align: center; 
+    font-size: 4em;
+}
+
+#details img {
+    width: 500px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#details h3 {
+    color: green; 
+    text-align: center; 
+    font-size: 2em;
+}
+
+#details ul  {
+    text-align: center;  
+    list-style-type: none; 
+    padding: 0;
+    font-size: 2em;
+}
+
+#details p {
+    font-size: 2em;
+}
+
+/*categories*/
+
+#liste li {
+    display: inline-flex;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+#liste a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#liste a:hover {
+    color: rgb(255, 106, 51) ;
+    font-weight: bold;
+    transform: translateY(-30px); 
+}
+#cat {
+    display: flex;
+    width: 250px;
+    height: 800px;
+    padding: 1px 0;
+
+
+}
+
+#cat li { 
+    list-style-type: none;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+#cat a {
+    color: green; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#cat img {
+   
+    width: 15%;
+}
+
+#alphabet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    font-weight: bold;
+    margin-top: 8%;
+    color: rgb(255, 106, 51);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#alphabet p:hover {
+    color: green;
+}
+
+#searchBtn {
+    border-radius: 50%;
+}
+
+
+
+
+

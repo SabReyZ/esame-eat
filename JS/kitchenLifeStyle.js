@@ -31,6 +31,7 @@ async function preview() {
 
 function openDetails() {
     const mealPreview = document.querySelector('#preview'); 
+    
     if (!mealPreview) {
         console.error('Error');
         return;

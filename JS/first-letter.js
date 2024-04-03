@@ -1,8 +1,8 @@
 async function alpha(e) {
     const letter  = e.target.textContent
     try { 
-        
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`); 
+        
         if (!response.ok) { 
             throw new Error('Error');
         }
@@ -22,7 +22,7 @@ async function alpha(e) {
             </li>`;
         }
     } catch (error) {
-        console.error("Error :", error); /* s'il y a rien qui va dans tous ca..renvoie error*/
+        console.error("Error :", error);
     }
 }
 
@@ -30,5 +30,4 @@ const letters = document.querySelectorAll("p.alphabet-btn")
 
 for(let l of letters) {
     l.addEventListener('click', alpha)
-
 }

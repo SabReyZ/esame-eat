@@ -2,6 +2,7 @@ async function categoryP() {
     try { 
         const query = new URLSearchParams(window.location.search).get('category'); 
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`); /**je cherche mon query dans la category */
+        
         if (!response.ok) { 
             throw new Error('Error');
         }
@@ -22,7 +23,7 @@ async function categoryP() {
     }
 }
 
-categoryP(); /*afficher la function*/
+categoryP(); 
 
 
 

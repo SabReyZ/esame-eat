@@ -1,0 +1,513 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*POUR TOUS LES HEADERS*/
+
+.logo {
+    width: 10%;  
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+nav {
+    align-self: center;
+    height:100%;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+}
+
+.navbar li {
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.navbar li a { 
+    text-decoration: none;
+    font-size: xx-large;
+    color: rgb(255, 106, 51);
+}
+
+a.menu:hover, a.categories:hover,  a.recherche:hover,  a.geo:hover,  a.az:hover, a.courses:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/*POUR TOUS LES FOOTERS*/ 
+
+footer {
+    display: grid;
+    justify-content: center;
+}
+
+.logoPartner a {
+    display: flex;
+    justify-content: center;
+}
+
+.leclerc {
+    width: 20%;
+}
+
+.spanLogo {
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+/*Style pour l'index "KitchenLifeStyle.html*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.title {
+    display: grid;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color:  rgb(255, 106, 51);
+    font-size: 2rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+spanP {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.randomMeal {
+    background-color: white;
+    margin-top: 5%;
+    text-decoration: none;
+    color: rgb(255, 106, 51);
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid  rgb(255, 106, 51);
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+button.randomMeal:hover{
+    color: green;
+    border: 1px solid green;
+}
+
+/*STYLE JS*/
+
+/*KitchenLifeStyle.js*/
+#preview h1 {
+    color: green;
+    text-align: center; 
+}
+
+#preview img {
+    width: 300px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/*random.js*/
+
+.containerRandom {
+    border: 10px solid green;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+#details h1 {
+    color: green;
+    text-align: center; 
+    font-size: 4em;
+}
+
+#details img {
+    width: 500px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#details h3 {
+    color: green; 
+    text-align: center; 
+    font-size: 2em;
+}
+
+#details li  {
+    text-align: center;  
+    list-style-type: none; 
+    padding: 0;
+    font-size: 2em;
+}
+
+
+#details p {
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*categories.js*/
+
+#liste li {
+    display: inline-flex;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+#liste a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#liste a:hover {
+    color: rgb(255, 106, 51) ;
+    font-weight: bold;
+    transform: translateY(-30px); 
+}
+
+/*categorie.js*/
+
+#cat {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    height: 50%;
+    padding: 1px 0;
+}
+
+#cat li { 
+    list-style-type: none;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+#cat a {
+    color: green; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#cat img {
+    border-radius: 50%;
+}
+
+/*meal.js*/
+
+#meal {
+    border: 10px solid green;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+#meal h1 {
+    color: green;
+    text-align: center; 
+    font-size: 4em;
+}
+
+#meal img {
+    width: 500px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#meal h3 {
+    color: green; 
+    text-align: center; 
+    font-size: 2em;
+}
+
+#meal li  {
+    text-align: center;  
+    list-style-type: none; 
+    padding: 0;
+    font-size: 2em;
+}
+
+
+#meal p {
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*search.js*/
+
+.containerSearch {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#nomPlats {
+    background-color: white;
+    text-decoration: none;
+    color: rgb(255, 106, 51);
+    font-weight: bold;
+    font-size: large;
+    width: 40%;
+    text-align: center;
+    border: 2px solid rgb(255, 106, 51);
+    margin-right: -6px;
+}
+
+#searchBtn {
+    background-color: white;
+    text-decoration: none;
+    color: rgb(255, 106, 51);
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid  rgb(255, 106, 51);
+    border-radius: 0 20px  20px 0;
+    width: 40%;
+    text-align: center;
+}
+
+#detailSearch {
+    display: flex;
+    overflow: auto;   
+    margin-right: 30%;
+    justify-content: center;
+    gap: 1%;
+}
+
+#detailSearch a {
+    text-decoration: none;
+}
+
+#detailSearch h1 {
+    color: green;
+    text-align: center; 
+    font-size: 4em;
+}
+
+#detailSearch img {
+    width: 500px; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+/* first-letter.js*/
+
+#alphabet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    font-weight: bold;
+    margin-top: 8%;
+    color: rgb(255, 106, 51);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#alphabet p:hover {
+    color: green;
+}
+
+#listeaz li {
+    list-style: none;
+}
+
+#listeaz li a {
+    text-decoration: none;
+}
+
+#listeaz {
+    display: flex;
+    overflow: auto;   
+    gap: 5%;
+    margin-top: 10%;
+}
+
+#listeaz img {
+    margin-top: 5%;
+    margin-bottom: 20%;
+    border-radius: 50%;
+}
+
+/*RESPONSIVE*/
+
+/* Aggiungi questa regola al tuo CSS */
+
+@media(min-width: 501px) {
+    .material-symbols-outlined {
+        display: none; 
+    }
+
+    #menu-resp {
+        display: none; 
+    }
+}
+
+@media(max-width:500px) {
+    body {
+        background-repeat:no-repeat;
+        background-size: cover ;
+        width: 100vw;
+        position:static;
+    }
+
+    .logo {
+        width: 35%;
+        margin-left: 33%;
+    }
+        
+    header {
+        position: relative;
+        top: 0;
+    }
+
+    /* Index */
+
+    header nav {
+        display: inline-block;
+        padding: 5px 0;
+        right: -500px;
+        position: absolute; 
+        width: 100%;
+        overflow:scroll;
+        text-align: end;
+        transition:ease 1s;
+    }
+
+    .navbar li a {
+        font-size: medium;
+    }
+
+    header label {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #menu-resp {
+        display: none;
+        position: absolute;
+        top: 10px; 
+        right: 10px;
+    }
+
+    #menu-resp:checked ~ nav {
+    right: 0;
+    transition: ease 1s;
+    max-width: inherit;
+    overflow: scroll;
+    display: flex;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px !important;
+    }
+
+    .container .title {
+        margin-top: 30%;
+        width: 90%;
+        height: 100%;
+    }
+
+    .button {
+        width: 125%;
+        display: inline;
+        margin-left: 34%;
+    }
+
+    /*random*/
+
+    #details img {
+        width: 60%;
+    }
+
+    /*categorie*/
+
+    #cat {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cat img {
+      width: 80%;
+    }
+
+    /*meal*/
+
+    #meal img {
+        width: 60%;
+    }
+
+    .search {
+        margin-top: 50%;
+        margin-left: 33%;
+    }
+
+    #nomPlats {
+        text-align: center;
+        width: 100%;
+        font-size: medium;
+    }
+
+    #searchBtn {
+        margin-top: 20px;
+        font-size: medium;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 5px;
+    }
+
+    .containerSearchDetails {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #detailSearch {
+        display: flex;
+        flex-direction: column;  
+        gap: 1%;
+    }
+
+    #detailSearch img {
+        width: 80%;
+    }
+}
+
+/*Desole j'avais pas fini :(*/
+
+
+
+
+
+

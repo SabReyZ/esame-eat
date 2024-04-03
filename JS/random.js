@@ -17,7 +17,7 @@ async function details() {
             <h3>Origine</h3>
             <p>${meal.strArea}</p>
             <h3>Ingrédients</h3>
-            <ul>${getIngredients(meal).join('')}</ul>
+            <li>${getIngredients(meal).join('')}</li>
             <h3>Préparation</h3>
             <p>${meal.strInstructions}</p>
         <div>`;
@@ -31,6 +31,7 @@ async function details() {
 
 function getIngredients(meal) {
     const ingredients = [];
+    
     for (let i = 1; i <= 20; i++) {
         if (meal[`strIngredient${i}`]) {
             ingredients.push(`<li>${meal[`strMeasure${i}`]} ${meal[`strIngredient${i}`]}</li>`);

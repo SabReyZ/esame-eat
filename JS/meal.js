@@ -2,6 +2,7 @@ async function mealDetails() {
     try { 
         const id = new URLSearchParams(window.location.search).get('id'); 
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
+        
         if (!response.ok) { 
             throw new Error('Error');
         }
@@ -21,11 +22,13 @@ async function mealDetails() {
                 <p>${meals.strInstructions}</p>
             </div>`; 
     } catch (error) {
-        console.error("Error :", error); /* s'il y a rien qui va dans tous ca..renvoie error*/
+        console.error("Error :", error);
     }
 }
+
 function getIngredients(meals) {
     const ingredients = [];
+    
     for (let i = 1; i <= 20; i++) {
         if (meals[`strIngredient${i}`]) {
             ingredients.push(`<li>${meals[`strMeasure${i}`]} ${meals[`strIngredient${i}`]}</li>`);
